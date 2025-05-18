@@ -1,0 +1,188 @@
+/* Estilos Generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Gris claro */
+    color: #495057; /* Gris oscuro */
+    line-height: 1.6;
+}
+
+/* Header */
+.lujan-header {
+    background: linear-gradient(to bottom, #198754, #20c997); /* Verde a turquesa */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 80px; /* Ajusta el tamaño del logo */
+}
+
+/* Nav */
+.lujan-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.lujan-nav ul li {
+    margin-right: 1.5rem;
+}
+
+.lujan-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.lujan-nav a:hover {
+    color: #ffc107; /* Amarillo suave al pasar el mouse */
+}
+
+/* Main */
+.lujan-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Sections */
+.lujan-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.lujan-section:hover {
+    transform: translateY(-5px);
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.lujan-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Cartelera */
+#cartelera-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.anuncio {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.anuncio:hover {
+    background-color: #e9ecef;
+}
+
+.anuncio h3 {
+    color: #20c997;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.anuncio p {
+    margin-bottom: 0.5rem;
+}
+
+.anuncio-link {
+    display: block; /* Asegura que el enlace ocupe todo el div */
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto del padre */
+    height: 100%; /* Asegura que ocupe toda la altura del div */
+    width: 100%; /* Asegura que ocupe todo el ancho del div */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño */
+}
+
+/* Contacto */
+#contacto-info {
+    display: flex;
+    align-items: center;
+    color: #495057;
+    text-decoration: none;
+    gap: 0.75rem;
+    transition: color 0.3s ease;
+    margin-bottom: 1rem; /* Añade espacio debajo de cada enlace */
+}
+
+#contacto-info a {
+    display: flex;
+    align-items: center;
+    color: #495057;
+    text-decoration: none;
+    gap: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+#contacto-info a:hover {
+    color: #198754;
+}
+
+/* Footer */
+.lujan-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #20c997;
+    color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+i {
+    margin-right: 0.5rem;
+}
+
+/* Media Queries */
+/* Media Queries */
+@media (max-width: 768px) {
+    #contacto-info {
+        flex-direction: column; /* Apila los elementos en columna */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    #contacto-info a {
+        margin-bottom: 1.5rem; /* Aumenta el espacio entre los enlaces */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        box-sizing: border-box; /* Incluye el padding y border en el ancho */
+        padding: 1rem; /* Añade padding para mayor espaciado interno */
+        border-bottom: 1px solid #dee2e6; /* Agrega una línea divisoria */
+    }
+}@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lujan-nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
